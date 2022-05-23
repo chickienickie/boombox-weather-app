@@ -16,9 +16,35 @@
 
 <body>
   <div class="container">
-    <h1>
-      Hello World
-    </h1>
+    <div class="weather-app-wrapper">
+      <h1 id="city">New York</h1>
+      <ul>
+        <li>Last updated: Monday, 11:34am <span id="date"></span></li>
+        <li id="description">Clear</li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="clearfix weather-temperature">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" class="float-left" />
+          <div class="float-left">
+            <strong id="temperature">40</strong><span class="units">°C</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <ul>
+          <li>Humidity:0 <span id="humidity"></span>%</li>
+          <li>Wind: 5<span id="wind"></span> m/h</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <small>
+    <a href="https://github.com/chickienickie/rad-80s-weather-app" target="_blank">Open-source code</a>
+    by Nickie Potter
+  </small>
+
   </div>
   <script src="src/app.js"></script>
 
